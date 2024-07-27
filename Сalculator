@@ -1,0 +1,14 @@
+while True:
+    op = input("Выберите оператор: ")
+    while True:
+        a = int(input("Введите первое число: ")); break 
+    while True:
+        b = int(input("Введите второе число: ")); break 
+    if op == "+": print(a + b)
+    elif op == "-": print(a - b)
+    elif op == "*": print(a * b)
+    elif op == "/":
+        try: print(a / b)
+        except ZeroDivisionError: print("На ноль делить нельзя."); continue
+    else: print('Ошибка'); continue
+    
