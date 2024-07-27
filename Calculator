@@ -1,0 +1,21 @@
+while True:
+    op = input("Выберите оператор: ")
+    while True:
+        a = int(input("Введите первое число: ")); break 
+    while True:
+        b = int(input("Введите второе число: ")); break 
+    def sum (a, b):
+        return a + b
+    def sub (a, b):
+        return a - b
+    def mul (a, b):
+        return a * b
+    def div (a, b):
+        return a / b
+    if op == "+": print(a + b)
+    elif op == "-": print(a - b)
+    elif op == "*": print(a * b)
+    elif op == "/":
+        try: print(a / b)
+        except ZeroDivisionError: print("На ноль делить нельзя."); continue
+    
